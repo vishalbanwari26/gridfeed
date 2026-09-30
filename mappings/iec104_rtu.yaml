@@ -1,0 +1,9 @@
+# Substation RTU speaking IEC 60870-5-104. One common address (CA) per station,
+# measured values as short floats with time tag (type 36, M_ME_TF_1).
+integration: iec104-rtu
+format: iec104
+channels:
+  "1001": {quantity: active_power,   unit: W,   scale: 1000}   # kW
+  "1002": {quantity: reactive_power, unit: var, scale: 1000}   # kvar
+  "1003": {quantity: voltage,        unit: V,   scale: 1}
+  "1004": {quantity: current,        unit: A,   scale: 1}

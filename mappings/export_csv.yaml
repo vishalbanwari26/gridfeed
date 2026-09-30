@@ -1,0 +1,13 @@
+# Historical export from a customer's metering system: German CSV,
+# semicolon separated, decimal comma, local-time column names.
+integration: batch-export
+format: csv
+delimiter: ";"
+decimal: ","
+device_field: Station
+timestamp: {field: Zeitstempel, format: iso8601}
+channels:
+  "P [kW]":   {quantity: active_power,   unit: W,   scale: 1000}
+  "Q [kvar]": {quantity: reactive_power, unit: var, scale: 1000}
+  "U [V]":    {quantity: voltage,        unit: V,   scale: 1}
+  "I [A]":    {quantity: current,        unit: A,   scale: 1}

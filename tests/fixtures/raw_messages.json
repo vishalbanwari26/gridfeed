@@ -1,0 +1,19 @@
+{
+  "mqtt-sensorco": {
+    "raw": {"serial": "SA-1001", "time": "2016-06-09T12:00:00Z",
+            "readings": {"P_kW": -194.68, "Q_kvar": 12.3, "U_LL_V": 415.29, "I_A": 271.1}},
+    "expected": {"device": "SA-1001", "ts": "2016-06-09T12:00:00+00:00",
+                 "values": {"active_power": -194680.0, "reactive_power": 12300.0, "voltage": 415.29, "current": 271.1}}
+  },
+  "mqtt-gridbox": {
+    "raw": {"id": "GB-0301", "t": 1465473600000, "v": [[1, 452310], [2, 98800], [3, 40912], [4, 6571], [9, 2410]]},
+    "expected": {"device": "GB-0301", "ts": "2016-06-09T12:00:00+00:00", "unmapped": ["9"],
+                 "values": {"active_power": 45231.0, "reactive_power": 9880.0, "voltage": 409.12, "current": 65.71}}
+  },
+  "batch-export": {
+    "raw": {"Zeitstempel": "2016-06-02T00:00:00+00:00", "Station": "ONS Urban 6",
+            "P [kW]": "14,116", "Q [kvar]": "9,049", "U [V]": "408,66", "I [A]": "23,69"},
+    "expected": {"device": "ONS Urban 6", "ts": "2016-06-02T00:00:00+00:00",
+                 "values": {"active_power": 14116.0, "reactive_power": 9049.0, "voltage": 408.66, "current": 23.69}}
+  }
+}

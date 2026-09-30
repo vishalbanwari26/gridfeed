@@ -1,0 +1,8 @@
+simbench>=1.6
+pandapower>=3.0
+paho-mqtt>=2.0
+psycopg[binary]>=3.2
+fastapi>=0.115
+uvicorn>=0.30
+pyyaml>=6.0
+pytest>=8.0

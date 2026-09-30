@@ -1,0 +1,13 @@
+# SensorCo MQTT sensors: JSON with named readings in engineering units.
+# Example: {"serial": "SA-1001", "time": "2016-06-09T00:00:00Z",
+#           "readings": {"P_kW": 12.72, "Q_kvar": 8.31, "U_LL_V": 408.78, "I_A": 21.46}}
+integration: mqtt-sensorco
+format: json
+device_field: serial
+timestamp: {field: time, format: iso8601}
+values_field: readings
+channels:
+  P_kW:   {quantity: active_power,   unit: W,   scale: 1000}
+  Q_kvar: {quantity: reactive_power, unit: var, scale: 1000}
+  U_LL_V: {quantity: voltage,        unit: V,   scale: 1}
+  I_A:    {quantity: current,        unit: A,   scale: 1}

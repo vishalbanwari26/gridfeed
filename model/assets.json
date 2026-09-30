@@ -1,0 +1,56 @@
+[
+ {
+  "asset_id": "MV1.101-LV1.101-Trafo 1",
+  "grid": "rural1",
+  "sn_kva": 160.0,
+  "vn_lv_v": 400.0,
+  "vk_percent": 4.0,
+  "vkr_percent": 1.46875,
+  "mv_setpoint_pu": 1.025
+ },
+ {
+  "asset_id": "MV1.101-LV2.101-Trafo 1",
+  "grid": "rural2",
+  "sn_kva": 250.0,
+  "vn_lv_v": 400.0,
+  "vk_percent": 6.0,
+  "vkr_percent": 1.32,
+  "mv_setpoint_pu": 1.025
+ },
+ {
+  "asset_id": "MV1.101-LV3.101-Trafo",
+  "grid": "rural3",
+  "sn_kva": 400.0,
+  "vn_lv_v": 400.0,
+  "vk_percent": 6.0,
+  "vkr_percent": 1.2,
+  "mv_setpoint_pu": 1.025
+ },
+ {
+  "asset_id": "MV1.101-LV4.101-Trafo 1",
+  "grid": "semiurb4",
+  "sn_kva": 400.0,
+  "vn_lv_v": 400.0,
+  "vk_percent": 6.0,
+  "vkr_percent": 1.2,
+  "mv_setpoint_pu": 1.025
+ },
+ {
+  "asset_id": "MV2.101-LV5.201-Trafo 1",
+  "grid": "semiurb5",
+  "sn_kva": 630.0,
+  "vn_lv_v": 400.0,
+  "vk_percent": 6.0,
+  "vkr_percent": 1.0952380952380953,
+  "mv_setpoint_pu": 1.025
+ },
+ {
+  "asset_id": "MV2.101-LV6.201-Trafo 1",
+  "grid": "urban6",
+  "sn_kva": 630.0,
+  "vn_lv_v": 400.0,
+  "vk_percent": 6.0,
+  "vkr_percent": 1.0952380952380953,
+  "mv_setpoint_pu": 1.025
+ }
+]

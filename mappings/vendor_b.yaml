@@ -1,0 +1,12 @@
+# GridBox MQTT gateways: compact payload, numeric channel codes, integer raw values.
+# Example: {"id": "GB-0301", "t": 1465430400000, "v": [[1, 127200], [2, 83055], [3, 40878], [4, 2146]]}
+integration: mqtt-gridbox
+format: code_list
+device_field: id
+timestamp: {field: t, format: epoch_ms}
+values_field: v
+channels:
+  "1": {quantity: active_power,   unit: W,   scale: 0.1}    # raw in 0.1 W
+  "2": {quantity: reactive_power, unit: var, scale: 0.1}    # raw in 0.1 var
+  "3": {quantity: voltage,        unit: V,   scale: 0.01}   # raw in 0.01 V
+  "4": {quantity: current,        unit: A,   scale: 0.01}   # raw in 0.01 A

@@ -1,0 +1,16 @@
+# Which device measures which asset in the grid model. The asset ids are the
+# transformer names from the grid model (model/assets.json).
+devices:
+  SA-1001:  {integration: mqtt-sensorco, asset: "MV1.101-LV1.101-Trafo 1", station: rural1}
+  SA-1002:  {integration: mqtt-sensorco, asset: "MV1.101-LV2.101-Trafo 1", station: rural2}
+  GB-0301:  {integration: mqtt-gridbox,  asset: "MV1.101-LV3.101-Trafo",   station: rural3}
+  GB-0402:  {integration: mqtt-gridbox,  asset: "MV1.101-LV4.101-Trafo 1", station: semiurb4}
+  RTU-CA5:  {integration: iec104-rtu,    asset: "MV2.101-LV5.201-Trafo 1", station: semiurb5}
+  RTU-CA6:  {integration: iec104-rtu,    asset: "MV2.101-LV6.201-Trafo 1", station: urban6}
+  # The batch export names stations by their plain-text label.
+  ONS Rural 1:        {integration: batch-export, asset: "MV1.101-LV1.101-Trafo 1", station: rural1}
+  ONS Rural 2:        {integration: batch-export, asset: "MV1.101-LV2.101-Trafo 1", station: rural2}
+  ONS Rural 3:        {integration: batch-export, asset: "MV1.101-LV3.101-Trafo",   station: rural3}
+  ONS Semiurban 4:    {integration: batch-export, asset: "MV1.101-LV4.101-Trafo 1", station: semiurb4}
+  ONS Semiurban 5:    {integration: batch-export, asset: "MV2.101-LV5.201-Trafo 1", station: semiurb5}
+  ONS Urban 6:        {integration: batch-export, asset: "MV2.101-LV6.201-Trafo 1", station: urban6}
